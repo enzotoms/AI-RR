@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Academy Of Intelligence</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Simple Line Font -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    @media (max-width: 767px) {
+        .navbar {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 0 12px !important;
+        }
+        .navbar-brand {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        .navbar-toggler {
+            margin-left: 0 !important;
+            align-self: center !important;
+            display: block !important;
+            margin-top: 55px !important;
+            height: 48px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .navbar-brand img {
+            height: 48px !important;
+            width: auto !important;
+        }
+        /* hide inline nav logo on mobile */
+        .nav-logo { display: none !important; }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- ========================= ABOUT IMAGE =========================-->
+    <div class="about_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="index.html"><img src="images/responsive-logo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                             <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index-2.html">Academics</a>
+                                </li>
+                                <li class="nav-logo">
+                                    <a href="index.html" class="navbar-brand"><img src="images/logonew.png" class="img-fluid" alt="logo" style="max-width: 140px; height: auto;"></a>
+                                </li>
+                               
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="academics.html">Courses</a></li>
+                                        <li><a class="dropdown-item" href="admin.html">Administrator</a></li>  
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About Administrator</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//END ABOUT IMAGE -->
+<!--============================= WELCOME TITLE =============================-->
+<style>
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-60px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(60px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .slide-left {
+        animation: slideInLeft 1s ease-out forwards;
+    }
+    .slide-right {
+        animation: slideInRight 1s ease-out forwards;
+    }
+    .about-feature {
+        background: #ffffff;
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .about-media {
+        position: relative;
+        padding: 20px 0;
+    }
+    .about-media__main {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+    .about-media__card {
+        position: absolute;
+        bottom: -40px;
+        left: 40px;
+        width: 68%;
+        transform: rotate(-8deg);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+        border: 8px solid #ffffff;
+        background: #ffffff;
+    }
+    .about-media__card img {
+        width: 100%;
+        display: block;
+    }
+    .about-media__badge {
+        position: absolute;
+        bottom: -18px;
+        right: -10px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: #f39c2d;
+        color: #ffffff;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-scribble {
+        position: absolute;
+        left: -28px;
+        top: 40px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(244, 92, 118, 0.15);
+        box-shadow: 14px 10px 0 rgba(244, 92, 118, 0.8), 28px 20px 0 rgba(244, 92, 118, 0.8);
+    }
+    .about-copy__eyebrow {
+        color: #f15b72;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .about-copy__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 14px;
+    }
+    .about-copy__line {
+        width: 60px;
+        height: 2px;
+        background: #0f172a;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+    .about-copy__text {
+        color: #4b5563;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+    .about-copy__list {
+        border-top: 1px solid #e5e7eb;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 16px 0;
+        margin: 20px 0 24px;
+    }
+    .about-copy__list p {
+        margin: 0;
+        font-weight: 600;
+        color: #1f2937;
+        font-size: 14px;
+    }
+    .about-copy__cta {
+        background: #f39c2d;
+        color: #ffffff;
+        border-radius: 4px;
+        padding: 12px 28px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+    }
+    .about-copy__cta:hover {
+        color: #ffffff;
+        background: #ea8d1d;
+    }
+    .why-choose {
+        background: #ffffff;
+        padding: 90px 0 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    .why-choose__scribble {
+        position: absolute;
+        right: -10px;
+        top: 30px;
+        width: 160px;
+        height: 120px;
+        border: 2px solid #f15b72;
+        border-left: none;
+        border-bottom: none;
+        border-radius: 60% 40% 60% 40% / 60% 40% 60% 40%;
+        transform: rotate(8deg);
+        opacity: 0.8;
+    }
+    .why-choose__header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .why-choose__eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 12px;
+        color: #f15b72;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .why-choose__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 14px;
+    }
+    .why-choose__line {
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background: #0f172a;
+    }
+    .why-choose__grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+    }
+    .why-choose__card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .why-choose__card-inner {
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 28px 22px 30px;
+        text-align: center;
+    }
+    .why-choose__icon {
+        width: 70px;
+        height: 70px;
+        margin: -10px auto 18px;
+        border-radius: 0 0 40px 40px;
+        background: #13c2c2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.25s ease;
+    }
+    .why-choose__icon span {
+        color: #ffffff;
+        font-size: 26px;
+    }
+    .why-choose__card h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #0f172a;
+    }
+    .why-choose__card p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #667085;
+        margin: 0;
+    }
+    .why-choose__card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    }
+    .why-choose__card:hover .why-choose__icon {
+        background: #f39c2d;
+    }
+    @media (max-width: 991px) {
+        .why-choose__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    @media (max-width: 575px) {
+        .why-choose__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 991px) {
+        .about-media__card {
+            position: relative;
+            width: 85%;
+            left: 0;
+            margin: -40px auto 0;
+            transform: rotate(-4deg);
+        }
+        .about-media__badge {
+            right: 10px;
+        }
+    }
+</style>
+<section class="welcome_about about-feature">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 slide-left">
+                <div class="about-media">
+                    <span class="about-scribble" aria-hidden="true"></span>
+                    <img src="images/campus/campus-img_05.jpg" class="about-media__main" alt="Campus students">
+                    <div class="about-media__card">
+                        <img src="images/WhatsApp Image 2026-02-10 at 9.14.23 PM.jpeg" alt="Olúwadámilọ́lá Akínwùnmí">
+                        <div class="about-media__badge">since<br>2012</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 slide-right">
+                <p class="about-copy__eyebrow">Olúwadámilọ́lá Akínwùnmí</p>
+                <h2 class="about-copy__title">Co-founder, Thinking True Initiative</h2>
+                <span class="about-copy__line"></span>
+                <p class="about-copy__text">Olúwadámilọ́lá Akínwùnmí is a civil servant with the FCT Administration (Agriculture Secretariat) in Abuja, Nigeria, and a graduate of the Faculty of Agriculture, Obafemi Awolowo University (2012). He is married and committed to a life of faith, growth, and service.</p>
+                <p class="about-copy__text">His journey has been shaped by a deeply transformative walk with God, marked by seasons of humility, academic challenges, and intentional spiritual development between 2012 and 2024 — a period he describes as the core Optimality phase of Thinking True (Selfless Faith).</p>
+                <p class="about-copy__text">During this time, he authored two books, built a self-development community, cultivated his gift in music, and mentored teenagers in musical growth. Guided by the lived teachings of Jesus — especially the discipline of self-examination — his life reflects a pursuit of truth, refinement, and spiritual sonship rooted in the Father.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--//END WELCOME TITLE -->
+    <!--============================= CORE VALUES =============================-->
+    <section class="why-choose">
+        <span class="why-choose__scribble" aria-hidden="true"></span>
+        <div class="container">
+            <div class="why-choose__header">
+                <p class="why-choose__eyebrow">How our services</p>
+                <h2 class="why-choose__title">Why Choose AI - RR</h2>
+                <span class="why-choose__line"></span>
+            </div>
+            <div class="why-choose__grid">
+                <div class="why-choose__card">
+                    <div class="why-choose__card-inner">
+                        <div class="why-choose__icon"><span class="icon-book-open"></span></div>
+                        <h3>Innovative Courses</h3>
+                        <p>Programs blend academic excellence with spiritual growth, helping students reason with truth and live authentically.</p>
+                    </div>
+                </div>
+                <div class="why-choose__card">
+                    <div class="why-choose__card-inner">
+                        <div class="why-choose__icon"><span class="icon-wallet"></span></div>
+                        <h3>Affordability</h3>
+                        <p>Practical pathways and supportive guidance make learning accessible while keeping focus on purpose and service.</p>
+                    </div>
+                </div>
+                <div class="why-choose__card">
+                    <div class="why-choose__card-inner">
+                        <div class="why-choose__icon"><span class="icon-graduation"></span></div>
+                        <h3>Academics</h3>
+                        <p>Rooted in self-examination and wisdom, our academics build clarity, discipline, and lifelong learning habits.</p>
+                    </div>
+                </div>
+                <div class="why-choose__card">
+                    <div class="why-choose__card-inner">
+                        <div class="why-choose__icon"><span class="icon-user"></span></div>
+                        <h3>Inspiring Student Life</h3>
+                        <p>A faith-driven community offers mentorship, music, and service opportunities that shape character and leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END CORE VALUES -->
+    
+        <!--============================= Instagram Feed =============================-->
+        <div id="instafeed"></div>
+        <!--//END Instagram feed JS -->
+        <!--============================= FOOTER =============================-->
+         <footer class="footer-minimal">
+        <div class="container footer-minimal__inner">
+            <div class="footer-minimal__icon">
+                <img src="images/logonew.png" class="img-fluid" alt="logo">
+            </div>
+            <p class="footer-minimal__text">What is required for the extraordinary insights of this era cannot be learned—only formed<br></p>
+            <ul class="footer-minimal__social">
+                <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+        <!--//END FOOTER -->
+                <!-- jQuery, Bootstrap JS. -->
+                <script src="js/jquery.min.js"></script>
+                <script src="js/tether.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Plugins -->
+                <script src="js/slick.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/counterup.min.js"></script>
+                <script src="js/instafeed.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/validate.js"></script>
+                <script src="js/tweetie.min.js"></script>
+                <!-- Subscribe -->
+                <script src="js/subscribe.js"></script>
+                <!-- Script JS -->
+                <script src="js/script.js"></script>
+            </body>
+
+            </html>
