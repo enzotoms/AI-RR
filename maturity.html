@@ -51,6 +51,11 @@
         }
         .nav-logo { display: none !important; }
     }
+    /* Centered Prev/Next navigation buttons for stage pages */
+    .nav-buttons { text-align: center; margin: 32px 0; }
+    .nav-buttons .btn-nav { display: inline-block; margin: 0 10px; padding: 10px 20px; border-radius: 8px; background: #4a90e2; color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 8px 20px rgba(74,144,226,0.12); transition: transform .12s ease, box-shadow .12s ease; }
+    .nav-buttons .btn-nav:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(74,144,226,0.14); }
+    @media (prefers-reduced-motion: reduce) { .nav-buttons .btn-nav { transition: none; } }
     </style>
 </head>
 
@@ -60,7 +65,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index.html"><img src="images/logonew.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+                    <a href="index.html"><img src="images/rrnewlogo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
                 </div>
             </div>
             <div class="row">
@@ -76,10 +81,10 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index-2.html">Academics</a>
+                                    <a class="nav-link" href="index-2.html">Academy</a>
                                 </li>
                                 <li class="nav-logo">
-                                    <a href="index.html" class="navbar-brand"><img src="images/logonew.png" class="img-fluid" alt="logo" style="max-width: 140px; height: auto;"></a>
+                                    <a href="index.html" class="navbar-brand"><img src="images/rrnewlogo.png" class="img-fluid" alt="logo" style="max-width: 140px; height: auto;"></a>
                                 </li>
                                
                                 <li class="nav-item dropdown">
@@ -112,7 +117,7 @@
 <!--============================= Message =============================-->
 <div class="speech">
     <div class="container">
-         <h2>The Maturity (Adult) Stage</h2>
+         
                 <div class="row">
                     <div class="col-md-8">
                       
@@ -120,19 +125,20 @@
 
                          <p><i>“Believest thou not that I am in the Father, and the Father in me? … the Father that dwelleth in me, he doeth the works.”</i></p>
                          <p>This life, however, begins with juvenility.</p> 
-
-                         
-                        <img src="images/welcom_sign.png" class="img-fluid" alt="welcom-img">
                     </div>
                     <div class="col-md-4">
-                       <img src="images/youngstudents.JPG" class="img-fluid" alt="#">
-                       
+                       <img src="images/bigtree.jpeg" class="img-fluid" alt="#">
                     </div>
                 </div>
-        
-    </div>
-</div>
-<!--//End Message -->
+
+                <!-- Centered Prev / Next navigation (moved inside message container) -->
+                <div class="nav-buttons" role="navigation" aria-label="Stage navigation">
+                    <a href="maturity.html" class="btn-nav" aria-label="Previous stage">Prev Stage</a>
+                    <a href="Juvenile.html" class="btn-nav" aria-label="Next stage">Next Stage</a>
+                </div>
+            </div>
+        </div>
+        <!--//End Message -->
  <footer class="footer-minimal">
         <div class="container footer-minimal__inner">
             <div class="footer-minimal__icon">

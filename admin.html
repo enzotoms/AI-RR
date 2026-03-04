@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index.html"><img src="images/logonew.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+                    <a href="index.html"><img src="images/rrnewlogo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
                 </div>
             </div>
             <div class="row">
@@ -79,7 +79,7 @@
                                     <a class="nav-link" href="index-2.html">Academics</a>
                                 </li>
                                 <li class="nav-logo">
-                                    <a href="index.html" class="navbar-brand"><img src="images/logonew.png" class="img-fluid" alt="logo" style="max-width: 140px; height: auto;"></a>
+                                    <a href="index.html" class="navbar-brand"><img src="images/rrnewlogo.png" class="img-fluid" alt="logo" style="max-width: 140px; height: auto;"></a>
                                 </li>
                                
                                 <li class="nav-item dropdown">
@@ -136,117 +136,157 @@
         animation: slideInRight 1s ease-out forwards;
     }
     .about-feature {
-        background: #ffffff;
-        padding: 80px 0;
-        position: relative;
-        overflow: hidden;
+        background: #eceff6;
+        padding: 60px 0;
     }
-    .about-media {
-        position: relative;
-        padding: 20px 0;
-    }
-    .about-media__main {
+    .about-feature .container {
+        max-width: 100%;
         width: 100%;
-        border-radius: 12px;
-        display: block;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        padding: 0 48px;
     }
-    .about-media__card {
-        position: absolute;
-        bottom: -40px;
-        left: 40px;
-        width: 68%;
-        transform: rotate(-8deg);
-        border-radius: 14px;
-        overflow: hidden;
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-        border: 8px solid #ffffff;
-        background: #ffffff;
-    }
-    .about-media__card img {
+    .founder-card {
+        max-width: none;
         width: 100%;
-        display: block;
+        margin: 0;
+        background: #ffffff;
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: 0 45px 140px rgba(5, 10, 33, 0.25);
+        display: flex;
+        flex-wrap: wrap;
     }
-    .about-media__badge {
-        position: absolute;
-        bottom: -18px;
-        right: -10px;
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-        background: #f39c2d;
-        color: #ffffff;
-        font-size: 11px;
-        letter-spacing: 2px;
+    .founder-card__left {
+        flex: 1 1 520px;
+        background: #050f27;
+        padding: 72px 80px;
+        color: #ffffff !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .founder-card__badge {
+        display: inline-block;
         text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #f48636;
+        background: rgba(244, 134, 54, 0.1);
+        padding: 6px 14px;
+        border-radius: 999px;
+        margin-bottom: 22px;
+    }
+    .founder-card__title {
+        font-family: 'Lora', serif;
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 6px;
+    }
+    .founder-card__role {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: #ffffff !important;
+        margin-bottom: 24px;
+    }
+    .founder-card__divider {
+        width: 60px;
+        height: 3px;
+        background: #f48636;
+        border-radius: 999px;
+        margin-bottom: 28px;
+        display: inline-block;
+    }
+    .founder-card__text {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #ffffff !important;
+        margin-bottom: 18px;
+    }
+    .founder-card__signature {
+        margin-top: 18px;
+        padding: 18px 22px;
+        border-radius: 22px;
+        background: rgba(7, 17, 44, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .signature-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        background: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .signature-icon svg {
+        width: 34px;
+        height: 18px;
+        stroke: #050f27;
+    }
+    .signature-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .signature-label {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11px;
+        color: #f48636;
+    }
+    .signature-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    .founder-card__right {
+        flex: 1 1 420px;
+        padding: 0;
+        min-height: 440px;
+        overflow: hidden;
+    }
+    .founder-card__portrait {
+        width: 100%;
+        height: 100%;
+    }
+    .founder-card__portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .about-alt {
+        padding: 120px 0;
+        background: #ffffff;
         text-align: center;
     }
-    .about-scribble {
-        position: absolute;
-        left: -28px;
-        top: 40px;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background: rgba(244, 92, 118, 0.15);
-        box-shadow: 14px 10px 0 rgba(244, 92, 118, 0.8), 28px 20px 0 rgba(244, 92, 118, 0.8);
+    .welcome-body {
+        max-width: 1000px;
+        margin: 0 auto;
     }
-    .about-copy__eyebrow {
-        color: #f15b72;
-        font-size: 12px;
-        letter-spacing: 3px;
+    .about-alt__image-wrap {
+        display: none;
+    }
+    .about-alt__title {
+        font-family: 'Lora', serif;
+        font-size: clamp(2.3rem, 3vw, 3rem);
+        letter-spacing: 0.14em;
         text-transform: uppercase;
-        margin-bottom: 10px;
+        color: #2f2f2f;
         font-weight: 700;
+        margin-bottom: 26px;
     }
-    .about-copy__title {
-        font-size: 30px;
-        font-weight: 700;
-        color: #0f172a;
-        margin-bottom: 14px;
-    }
-    .about-copy__line {
-        width: 60px;
-        height: 2px;
-        background: #0f172a;
-        display: inline-block;
+    .about-alt__text {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #4a4a4a;
         margin-bottom: 18px;
     }
-    .about-copy__text {
-        color: #4b5563;
-        font-size: 15px;
-        line-height: 1.8;
-        margin-bottom: 16px;
-    }
-    .about-copy__list {
-        border-top: 1px solid #e5e7eb;
-        border-bottom: 1px solid #e5e7eb;
-        padding: 16px 0;
-        margin: 20px 0 24px;
-    }
-    .about-copy__list p {
-        margin: 0;
-        font-weight: 600;
-        color: #1f2937;
-        font-size: 14px;
-    }
-    .about-copy__cta {
-        background: #f39c2d;
-        color: #ffffff;
-        border-radius: 4px;
-        padding: 12px 28px;
-        font-weight: 700;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        text-decoration: none;
-    }
-    .about-copy__cta:hover {
-        color: #ffffff;
-        background: #ea8d1d;
+    .about-alt__text strong {
+        color: #1f1f1f;
     }
     .why-choose {
         background: #ffffff;
@@ -353,90 +393,101 @@
             grid-template-columns: 1fr;
         }
     }
-    @media (max-width: 991px) {
-        .about-media__card {
-            position: relative;
-            width: 85%;
-            left: 0;
-            margin: -40px auto 0;
-            transform: rotate(-4deg);
+    @media (max-width: 1199px) {
+        .founder-card__left {
+            padding: 60px;
         }
-        .about-media__badge {
-            right: 10px;
+    }
+    @media (max-width: 991px) {
+        .founder-card {
+            border-radius: 28px;
+        }
+        .founder-card__left,
+        .founder-card__right {
+            flex: 1 1 100%;
+            padding: 50px 40px;
+        }
+        .founder-card__right {
+            order: -1;
+            min-height: 360px;
+        }
+        .founder-card__signature {
+            width: 100%;
+            justify-content: flex-start;
         }
     }
     @media (max-width: 767px) {
-        .slide-right {
-            margin-top: 80px;
+        .about-feature .container {
+            padding: 0 24px;
+        }
+    }
+    @media (max-width: 575px) {
+        .founder-card__left {
+            padding: 42px 30px;
+        }
+        .founder-card__title {
+            font-size: 30px;
+        }
+        .signature-icon {
+            width: 54px;
+            height: 54px;
         }
     }
 </style>
+
 <section class="welcome_about about-feature">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 slide-left">
-                <div class="about-media">
-                    <span class="about-scribble" aria-hidden="true"></span>
-                    <img src="images/administrator.jpg" class="about-media__main" alt="Campus students">
-                    <div class="about-media__card">
-                        <img src="images/WhatsApp Image 2026-02-10 at 9.14.23 PM.jpeg" alt="Olúwadámilọ́lá Akínwùnmí">
-                        <div class="about-media__badge">since<br>2012</div>
-                    </div>
+        <div class="founder-card">
+            <div class="founder-card__left slide-left">
+                <span class="founder-card__badge">About "Myself</span>
+                <h2 class="founder-card__title">Olúwadámilọ́lá Akínwùnmí</h2>
+                <p class="founder-card__role">Co-founder, Thinking True Initiative</p>
+                <span class="founder-card__divider" aria-hidden="true"></span>
+                <p class="founder-card__text">I am known by the name <b>Olúwadámilọ́lá Akínwùnmí.</b> I am currently based in Abuja, Nigeria, where I work as a civil servant with the FCT Administration (Agriculture Secretariat). I am married to my lovely wife. I obtained my Bachelor’s degree from Obafemi Awolowo University, Ile-Ife, under the Faculty of Agriculture, in 2012. Beyond these details, who I am today is the product of the deliberate humbling process by the Father (God). The humble background into which I was born, combined with prolonged academic struggles, drew me into deeper intimacy with God’s pruning. This process became more concrete between 2012 – 2024 where I went through the <b>core Optimality phase of Thinking True (Selfless Faith)</b>.</p>
+                <p class="founder-card__text">During this period, I faced grave challenges and seasons of loneliness. I wrote two books, pioneered a community focused on self-development, mastered my natural talent in music, and taught teenagers music as part of that mastery. Throughout this time, my feeling faculty remained highly active, allowing experience to be processed with depth rather than suppression. Above all, the teachings of Jesus became lived principles in my life—most notably the discipline of first (optimally) considering the log in one’s own eye.</p>
+                <p class="founder-card__text">I am not a product of the systems of this world, but of the Father, who, through <b>my humbled self</b>, intends that many more come into begotten sonship.</p>
+                <p class="founder-card__text">Since then, my life has been shaped—quietly and persistently—by the transformative handling of the Father’s intimate capacity.</p>
+                <div class="founder-card__signature" aria-label="Signature block">
+                    <span class="signature-icon">
+                        <svg viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12c6-8 12 8 18 0s12 8 18 0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="signature-meta">
+                        <span class="signature-label">Signature</span>
+                        <span class="signature-name">Dámílólá A.</span>
+                    </span>
                 </div>
             </div>
-            <div class="col-lg-6 slide-right">
-                <p class="about-copy__eyebrow">Olúwadámilọ́lá Akínwùnmí</p>
-                <h2 class="about-copy__title">Co-founder, Thinking True Initiative</h2>
-                <span class="about-copy__line"></span>
-                <p class="about-copy__text">Olúwadámilọ́lá Akínwùnmí is a civil servant with the FCT Administration (Agriculture Secretariat) in Abuja, Nigeria, and a graduate of the Faculty of Agriculture, Obafemi Awolowo University (2012). He is married and committed to a life of faith, growth, and service.</p>
-                <p class="about-copy__text">His journey has been shaped by a deeply transformative walk with God, marked by seasons of humility, academic challenges, and intentional spiritual development between 2012 and 2024 — a period he describes as the core Optimality phase of Thinking True (Selfless Faith).</p>
-                <p class="about-copy__text">During this time, he authored two books, built a self-development community, cultivated his gift in music, and mentored teenagers in musical growth. Guided by the lived teachings of Jesus — especially the discipline of self-examination — his life reflects a pursuit of truth, refinement, and spiritual sonship rooted in the Father.</p>
+            <div class="founder-card__right slide-right">
+                <div class="founder-card__portrait">
+                    <img src="images/WhatsApp Image 2026-02-10 at 9.14.23 PM.jpeg" alt="Portrait of Olúwadámilọ́lá Akínwùnmí">
+                </div>
             </div>
         </div>
     </div>
 </section>
     <!--//END WELCOME TITLE -->
-    <!--============================= CORE VALUES =============================-->
-    <section class="why-choose">
-        <span class="why-choose__scribble" aria-hidden="true"></span>
-        <div class="container">
-            <div class="why-choose__header">
-                <p class="why-choose__eyebrow">How our services</p>
-                <h2 class="why-choose__title">Why Choose AI - RR</h2>
-                <span class="why-choose__line"></span>
-            </div>
-            <div class="why-choose__grid">
-                <div class="why-choose__card">
-                    <div class="why-choose__card-inner">
-                        <div class="why-choose__icon"><span class="icon-book-open"></span></div>
-                        <h3>Innovative Courses</h3>
-                        <p>Programs blend academic excellence with spiritual growth, helping students reason with truth and live authentically.</p>
-                    </div>
-                </div>
-                <div class="why-choose__card">
-                    <div class="why-choose__card-inner">
-                        <div class="why-choose__icon"><span class="icon-wallet"></span></div>
-                        <h3>Affordability</h3>
-                        <p>Practical pathways and supportive guidance make learning accessible while keeping focus on purpose and service.</p>
-                    </div>
-                </div>
-                <div class="why-choose__card">
-                    <div class="why-choose__card-inner">
-                        <div class="why-choose__icon"><span class="icon-graduation"></span></div>
-                        <h3>Academics</h3>
-                        <p>Rooted in self-examination and wisdom, our academics build clarity, discipline, and lifelong learning habits.</p>
-                    </div>
-                </div>
-                <div class="why-choose__card">
-                    <div class="why-choose__card-inner">
-                        <div class="why-choose__icon"><span class="icon-user"></span></div>
-                        <h3>Inspiring Student Life</h3>
-                        <p>A faith-driven community offers mentorship, music, and service opportunities that shape character and leadership.</p>
-                    </div>
-                </div>
-            </div>
+   <!-- ======== WHY GIVE US ==========  -->
+
+<section class="about-alt" id="why-give-us">
+    <div class="container">
+        <div class="welcome-body">
+            <h2 class="about-alt__title">WHY GIVE THIS SERIOUS CONSIDERATION?</h2>
+            <div class="about-alt__divider" style="margin:22px auto 0; width:72px; height:3px; background:#d79b27;"></div>
+            <p class="about-alt__text" style="margin-top:28px; max-width:1100px; margin-left:auto; margin-right:auto; font-size:18px; line-height:1.85;">
+                This era, marked by the advent of Artificial Intelligence, belongs to those who can discover the limits of what society compels them to take
+                 seriously—career, morality, achievement, and status—and therefore learn to take themselves seriously from within. It is by encountering these
+                  limits that Reasoning begins to look beyond external validation and become inwardly responsible for its own life.
+            </p>
+            <p class="about-alt__text" style="margin-top:28px; max-width:1100px; margin-left:auto; margin-right:auto; font-size:18px; line-height:1.85;">
+                This seriousness is not formed by affirmation, self-talk, or conscious resolve. It emerges as Reasoning undergoes a living, inward formation—continually
+                 shaped by the divine will of God—where self-challenge becomes life itself. In this process, one is not a product of world systems, but inwardly begotten of the Father.
+            </p>
+            <p class="about-alt__text" style="margin-top:28px; max-width:1100px; margin-left:auto; margin-right:auto; font-size:18px; line-height:1.85;">(Jeremiah 31:33; Romans 8:19)</p>
         </div>
-    </section>
+    </div>
+</section>
     <!--//END CORE VALUES -->
     
         <!--============================= Instagram Feed =============================-->
