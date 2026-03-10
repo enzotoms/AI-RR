@@ -435,6 +435,19 @@
             height: 54px;
         }
     }
+    /* Responsive fixes for about-alt section to prevent overflow on small screens */
+    @media (max-width: 767px) {
+        .about-alt { padding: 48px 12px; }
+        .about-alt .container { padding-left: 0; padding-right: 0; }
+        .welcome-body { max-width: 100%; padding: 0 8px; }
+        .about-alt__title { font-size: 1.6rem; letter-spacing: 0.08em; }
+        .about-alt__text { font-size: 15px; line-height: 1.75; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding: 0 !important; }
+    }
+    @media (max-width: 575px) {
+        .about-alt { padding: 36px 10px; }
+        .about-alt__title { font-size: 1.45rem; }
+        .about-alt__text { font-size: 14.5px; line-height: 1.7; }
+    }
 </style>
 
 <section class="welcome_about about-feature">

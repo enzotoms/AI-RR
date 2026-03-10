@@ -30,13 +30,46 @@
         .navbar-brand.nav-brand2 img{height:48px;width:auto}
         .slider_title h4{display:none !important}
     }
-    @media (max-width: 767px){
-        .navbar.navbar2{display:flex;align-items:center;justify-content:space-between;padding:0 12px;min-height:64px}
-        .navbar-brand.nav-brand2{margin:0;padding:0;display:flex;align-items:center}
-        .navbar-toggler{margin-left:0;align-self:center;display:block;position:static;margin-top:55px !important;padding:8px 10px !important;height:48px;display:flex;align-items:center;justify-content:center;transform:translateY(0)}
-        .navbar-brand.nav-brand2 img{height:48px;width:auto}
-    }
-    @media (max-width: 767px){.nav-logo{display:none !important}}
+
+    /* Copy exact mobile navbar layout from index.html to match site-wide behavior */
+     @media (max-width: 767px) {
+            .header-section {
+                min-height: 100vh !important;
+                height: 100vh !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .navbar {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding: 0 12px !important;
+            }
+            .navbar-brand {
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+            .navbar-toggler {
+                margin-left: 0 !important;
+                align-self: center !important;
+                display: block !important;
+                margin-top: 55px !important;
+                height: 48px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            .navbar-brand img {
+                height: 40px !important;
+                width: auto !important;
+            }
+            .nav-logo { display: none !important; }
+            .slider_title h4 { display: none !important; }
+        }
+   
     /* Hero styles mirrored from index.html */
     .hero{min-height:76vh;display:flex;align-items:center;background-size:cover;background-position:center;position:relative;color:#fff;perspective:900px;overflow:hidden}
     .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.25),rgba(2,6,23,0.45));z-index:1}
@@ -411,6 +444,10 @@
         .work-process__heading{font-size:17px}
         .work-process__text{max-width:100%}
     }
+    /* Reduce header logo width on small screens to match site pattern */
+    @media (max-width: 767px) {
+        .responsive-logo{width:120px !important;height:auto !important}
+    }
     </style>
 </head>
 
@@ -420,7 +457,7 @@
         <div class="container nav-menu">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index.html"><img src="images/rrnewlogo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+                    <a href="index.html"><img src="images/AIlogo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
                 </div>
             </div>
             <div class="row">
