@@ -56,6 +56,13 @@
     .nav-buttons .btn-nav { display: inline-block; margin: 0 10px; padding: 10px 20px; border-radius: 8px; background: #4a90e2; color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 8px 20px rgba(74,144,226,0.12); transition: transform .12s ease, box-shadow .12s ease; }
     .nav-buttons .btn-nav:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(74,144,226,0.14); }
     @media (prefers-reduced-motion: reduce) { .nav-buttons .btn-nav { transition: none; } }
+    /* juvenile stage gif sizing */
+    .juvenile-img{height:300px;width:auto;}
+    @media (min-width:992px){.juvenile-img{max-height:1000px;width:80%;}}
+    @media (max-width:575px){.juvenile-img{max-height:400px;width:auto;}}
+    /* constrain speech container */
+    .speech .container{max-width:90vw;}
+    @media (min-width:1200px){.speech .container{max-width:1200px;}}
     </style>
 </head>
 
@@ -92,7 +99,7 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="academics.html">Courses</a></li>
+                                        <li><a class="dropdown-item" href="academics.html">The Course</a></li>
                                         <li><a class="dropdown-item" href="admin.html">Administrator</a></li>  
                                 </ul>
                             </li>
@@ -126,7 +133,7 @@
                          <p>One expression of this approach is grooming the child to experience memory as a living system nourished by versatile (balanced diet of) reading, rather than viewing reading merely as a means to grades or career prospects—external frameworks that define human reasoning.</p> 
                     </div>
                     <div class="col-md-4">
-                       <img src="images/smalltree.jpeg" class="img-fluid" alt="#">
+                       <img src="images/IntegratingTwo.gif" class="img-fluid juvenile-img" alt="#">
                     </div>
                 </div>
                 <!-- Centered Prev / Next navigation (moved inside message container) -->

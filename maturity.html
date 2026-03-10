@@ -56,6 +56,17 @@
     .nav-buttons .btn-nav { display: inline-block; margin: 0 10px; padding: 10px 20px; border-radius: 8px; background: #4a90e2; color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 8px 20px rgba(74,144,226,0.12); transition: transform .12s ease, box-shadow .12s ease; }
     .nav-buttons .btn-nav:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(74,144,226,0.14); }
     @media (prefers-reduced-motion: reduce) { .nav-buttons .btn-nav { transition: none; } }
+    /* maturity stage gif sizing */
+    /* default height for desktop */
+    .maturity-img{height:400px;width:auto;}    @media (min-width:992px){
+        /* on larger screens allow more height and width */
+        .maturity-img{max-height:1000px;width:130%;}
+    }    @media (max-width:575px){
+        .maturity-img{max-height:600px;width:auto;}
+    }
+    /* limit speech container width for better stretch */
+    .speech .container{max-width:90vw;}
+    @media (min-width:1200px){.speech .container{max-width:1200px;}}
     </style>
 </head>
 
@@ -92,7 +103,7 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="academics.html">Courses</a></li>
+                                        <li><a class="dropdown-item" href="academics.html">The Course</a></li>
                                         <li><a class="dropdown-item" href="admin.html">Administrator</a></li>  
                                 </ul>
                             </li>
@@ -127,7 +138,7 @@
                          <p>This life, however, begins with juvenility.</p> 
                     </div>
                     <div class="col-md-4">
-                       <img src="images/bigtree.jpeg" class="img-fluid" alt="#">
+                       <img src="images/IntegratingFour.gif" class="img-fluid maturity-img" alt="#">
                     </div>
                 </div>
 

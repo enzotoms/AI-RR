@@ -55,6 +55,26 @@
     .nav-buttons .btn-nav { display: inline-block; margin: 0 10px; padding: 10px 20px; border-radius: 8px; background: #4a90e2; color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 8px 20px rgba(74,144,226,0.12); transition: transform .12s ease, box-shadow .12s ease; }
     .nav-buttons .btn-nav:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(74,144,226,0.14); }
     @media (prefers-reduced-motion: reduce) { .nav-buttons .btn-nav { transition: none; } }
+    /* adolescent stage gif sizing */
+    .adolescent-img{height:auto;width:100%;max-width:100%;display:block;max-height:900px;margin:0 auto;object-fit:contain}
+    @media (min-width:992px){
+        /* increase gif size on large screens */
+        .adolescent-img{max-height:1600px;width:95%;margin:0 auto}
+    }
+    /* mobile: make GIF full-width, constrain height, and show before text */
+    @media (max-width:767px){
+        .adolescent-img{max-height:600px;width:100%}
+        .speech .col-md-4{order:-1}
+        .speech .col-md-8{order:0}
+    }
+    @media (max-width:575px){
+        .adolescent-img{max-height:420px;width:100%}
+    }
+    /* allow speech content to stretch more */
+    .speech .container{max-width:90vw;}
+    /* add horizontal padding when using container-fluid so content breathes on large screens */
+    .speech .container-fluid{padding-left:clamp(16px,4vw,80px);padding-right:clamp(16px,4vw,80px);box-sizing:border-box}
+    @media (min-width:1200px){.speech .container{max-width:1200px;}}
     </style>
 </head>
 
@@ -91,7 +111,7 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="academics.html">Courses</a></li>
+                                        <li><a class="dropdown-item" href="academics.html">The Course</a></li>
                                         <li><a class="dropdown-item" href="admin.html">Administrator</a></li>  
                                 </ul>
                             </li>
@@ -115,25 +135,28 @@
 
 <!--============================= Message =============================-->
 <div class="speech">
-    <div class="container">
+    <div class="container-fluid">
         
                 <div class="row">
                     <div class="col-md-8">
                       
                         <p>Upon completion of the Intentionality stage, Optimality begins. This is the stage in which Reasoning comes alive to itself and begins to function independently of societal pressure. Here, the child develops a tangible passion for continuous self-challenge without external compulsion—the lived experience of “my cross.”</p> 
 
-                         <p>This stage unfolds in two phases: <br> The first phase (Adolescent Optimality) is marked by the child’s inward ownership of self-challenge, where taking up one’s cross becomes a daily, personal experience rather than an imposed discipline. This inward posture naturally leads to the followership of Jesus, as the individual begins to encounter the divine momentum within Jesus’ core expositions—realities inaccessible to human self-sufficiency.</p> 
-                        <p><b><i>“And whosoever doth not bear HIS cross, and come after me, cannot be my disciple.”</i></b> <br> Principles such as seek ye first the kingdom of God, consider the log in your own eye, and judge not, that ye be not judged become personal and practicable realities. Through this process, vulnerability to intimacy with God deepens.</p>
-                         <p>To establish the child firmly within this first phase of Optimality is the explicit goal of the Academy of Intelligence – Reality’s Realm. In collaboration with spiritually inclined parents, this formation is pursued deliberately over a span of 4.5 years. The second phase (Youthful Optimality) follows beyond formal tutelage. Here, under the continued guidance of the parent and the Father’s (God’s) direct dealing, innovative Reasoning is birthed in ways no human system can sponsor. This phase gradually opens into the stage of Maturity.</p>
+                         <p><b>This stage unfolds in two phases: <br> The first phase (Adolescent Optimality) </b> is marked by the child’s inward ownership of self-challenge, where taking up one’s cross becomes a daily, personal experience rather than an imposed discipline. This inward posture naturally leads to the followership of Jesus, as the individual begins to encounter the divine momentum within Jesus’ core expositions—realities inaccessible to human self-sufficiency.</p> 
+                        <p><b><i>“And whosoever doth not bear HIS cross, and come after me, cannot be my disciple.”</i></b> <br> Principles such as <i> seek ye first the kingdom of God, consider the log in your own eye, and judge not, that ye be not judged </i> become personal and practicable realities. Through this process, vulnerability to intimacy with God deepens.</p>
+                         <p>To establish the child firmly within this first phase of Optimality is the explicit goal of the Academy of Intelligence – Reality’s Realm. In collaboration with spiritually inclined parents, this formation is pursued deliberately over a span of 4.5 years.</p>
+                         <p><b>The second phase (Youthful Optimality) </b> follows beyond formal tutelage. Here, under the continued guidance of the 
+                            parent and the Father’s (God’s) direct dealing, innovative Reasoning is birthed in ways no human system can sponsor.
+                             This phase gradually opens into the stage of Maturity.</p>
                     </div>
-                    <div class="col-md-4">
-                       <img src="images/smallesttree.jpeg" class="img-fluid" alt="#">
-                    </div>
+                          <div class="col-md-4">
+                              <img src="images/IntegratingThree.gif" class="img-fluid adolescent-img" alt="#">
+                          </div>
                 </div>
                 <!-- Centered Prev / Next navigation (moved inside message container) -->
                 <div class="nav-buttons" role="navigation" aria-label="Stage navigation">
                     <a href="Juvenile.html" class="btn-nav" aria-label="Previous stage">Prev Stage</a>
-                    <a href="adolescent.html" class="btn-nav" aria-label="Next stage">Next Stage</a>
+                    <a href="index.html" class="btn-nav" aria-label="Next stage">Homepage</a>
                 </div>
     </div>
 </div>

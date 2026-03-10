@@ -249,7 +249,22 @@
         .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 2600ms cubic-bezier(.22,.9,.12,1), transform 2600ms cubic-bezier(.22,.9,.12,1); will-change: transform, opacity; }
         .reveal-right.in { opacity: 1; transform: translateX(0); }
         @media (prefers-reduced-motion: reduce) { .reveal-left, .reveal-right { transition: none; transform: none; opacity: 1; } }
-        </style>
+        /* stacked images container - positions child imgs on top of each other */
+        .stacked-images { position: relative; width: 300px; height: 300px; }
+        .stacked-images .about-img { position: absolute; top: 0; left: 0; }
+        /* nudge second image downward */
+        .stacked-images .about-img:nth-child(2) { top: 350px; }
+        /* ensure second image is square so GIF isn’t clipped by radius */
+        .stacked-images .about-img:nth-child(2) { border-radius: 10px; }        /* make second image wider than default */
+        .stacked-images .about-img:nth-child(2) { width: 400px; height: 300px; }
+        /* enlarge container to accommodate wider GIF */
+        .stacked-images { width: 350px; height: 500px; }
+        /* mobile adjustments: scale down and center the stack */
+        @media (max-width: 575px) {
+            .stacked-images { width: 340px; height: 340px; margin: 0 auto; }
+            .stacked-images .about-img { width: 100%; height: auto; }
+            .stacked-images .about-img:nth-child(2) { top: 80px; }
+        }        </style>
 
         <body>
     <!--============================= HEADER =============================-->
@@ -284,7 +299,7 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="academics.html">Courses</a></li>
+                                        <li><a class="dropdown-item" href="academics.html">The Course</a></li>
                                         <li><a class="dropdown-item" href="admin.html">Administrator</a></li>  
                                 </ul>
                             </li>
@@ -374,8 +389,9 @@
                                  <p class="reveal-left" data-order="6" style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px;">This "within you" does not refer to a physical location or organ, nor to a collective possession shared among people. It speaks of intimacy—an inward experience known only by the individual.</p>
                
             </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-center">
+            <div class="col-md-4 d-flex align-items-center justify-content-center stacked-images">
                 <img src="images/wave.jpeg" class="img-fluid about-img reveal-right" data-order="7" alt="#">
+                <img src="images/Integrating The Reason System.gif" class="img-fluid about-img reveal-right" data-order="8" alt="">
             </div>
         </div>
     </div>
@@ -405,10 +421,10 @@
               and belief without inward life. Jesus addressed this condition directly:
             </p>
             <p><i>“Many will say to me… and then will I profess unto them, I never knew you.”</i></p>
-            <p>And again: <i>“Not every one that saith unto me, Lord, Lord… but he that doeth the will of my Father.”</i>
-               These words reveal that true spirituality is not measured by religious activity, but by inward conformity
-                to the Father’s will. Jesus further clarified:
-            </p>
+            <p>And again:</p>
+            <p><i>“Not every one that saith unto me, Lord, Lord… but he that doeth the will of my Father.”</i></p>
+            <p> These words reveal that true spirituality is not measured by religious activity, but by inward conformity
+                to the Father’s will. Jesus further clarified:</p>
             <p><i>“No man can come to me, except the Father which hath sent me draw him.”</i></p>
             <p>Accordingly, the present aim of this Initiative is to orient the child’s developing mind toward vulnerability to God’s
                  inward drawing, as the child (Reasoning) encounters the living virtue of Thinking True as Selfless Faith—faith whose
@@ -431,7 +447,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="courses_box mb-5">
                         <div class="course-img-wrap">
-                            <img src="images/Integrating The Reason System.gif" class="img-fluid" alt="courses-img">
+                            <img src="images/bigtree.jpeg" class="img-fluid" alt="courses-img">
                             <div class="courses_box-img">
                                 <div class="courses-link-wrap">
                                     <a href="maturity.html" class="course-link"><span>know more</span></a>
@@ -453,7 +469,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="courses_box mb-5">
                         <div class="course-img-wrap">
-                            <img src="images/IntegratingTwo.gif" class="img-fluid" alt="courses-img">
+                            <img src="images/smallesttree.jpeg" class="img-fluid" alt="courses-img">
                             <div class="courses_box-img">
                                 <div class="courses-link-wrap">
                                     <a href="Juvenile.html" class="course-link"><span>know more</span></a>
@@ -475,7 +491,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="courses_box mb-5">
                         <div class="course-img-wrap">
-                            <img src="images/IntegratingThree.gif" class="img-fluid" alt="courses-img">
+                            <img src="images/smalltree.jpeg" class="img-fluid" alt="courses-img">
                             <div class="courses_box-img">
                                 <div class="courses-link-wrap">
                                     <a href="adolescent.html" class="course-link"><span>know more</span></a>
@@ -511,13 +527,13 @@
             <div class="admission-feature__subtitle">For next step</div>
             <h2 class="admission-feature__title">Our Invitation...</h2>
             <div class="admission-feature__divider"></div>
-            <p class="admission-feature__quote"><b><i>“Suffer little children, and forbid them not, to come unto me: for of such is the kingdom of heaven.”</i></b></p>
-            <p class="admission-feature__desc">This Initiative is not presented for mass acceptance, nor for hurried decisions. It is offered to those in whom what has been read resonates inwardly—beyond analysis and persuasion. Where this recognition is present, we invite a careful and deliberate engagement with the Academy of Intelligence – Reality’s Realm, in collaboration with spiritually inclined parents.<br><br>This is not an urgent call. It is a formative one. Thank you so much for the time spent so far.</p>
+            <p class="admission-feature__quote"><b><i>“Suffer little children, and forbid them not, to COME UNTO ME: for of such is the kingdom of heaven.”</i></b></p>
+            <!-- <p class="admission-feature__desc">This Initiative is not presented for mass acceptance, nor for hurried decisions. It is offered to those in whom what has been read resonates inwardly—beyond analysis and persuasion. Where this recognition is present, we invite a careful and deliberate engagement with the Academy of Intelligence – Reality’s Realm, in collaboration with spiritually inclined parents.<br><br>This is not an urgent call. It is a formative one. Thank you so much for the time spent so far.</p> -->
             <div class="admission-feature__authors">
                 <div class="admission-feature__author"> Olúwadámilọ ́lá Akínwùnmí <br> <span>Co-founder, The Thinking True Initiative</span></div>
                 <div class="admission-feature__author">Jesus Christ <br> <span>Founder, The Thinking True Initiative (Intimate elder brother)</span></div>
             </div>
-            <a href="academics.html" class="btn btn-default btn-about admission-feature__btn">ENTER OUR ACADEMY</a>
+            <a href="index-2.html" class="btn btn-default btn-about admission-feature__btn">ENTER OUR ACADEMY</a>
         </div>
     </div>
 </section>
