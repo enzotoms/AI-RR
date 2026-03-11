@@ -474,6 +474,27 @@
         .work-process__heading{font-size:17px}
         .work-process__text{max-width:100%}
     }
+  /* Hide globe on mobile */
+@media (max-width: 991px) {
+  .mission-section__globe {
+    display: none !important;
+  }
+
+  /* Pull the h2 out of the hero div on mobile */
+  .mission-section__hero h2 {
+    display: block;
+    position: relative;
+    z-index: 2;
+    text-align: center;      /* center the text on mobile */
+    margin: 20px auto;       /* space around it */
+  }
+
+  /* Optional: remove padding from the hero container to prevent extra spacing */
+  .mission-section__hero {
+    min-height: auto;
+    padding: 20px 10px;
+  }
+}
     </style>
 </head>
 
@@ -662,7 +683,7 @@
 <section class="immersive-section" id="theoretical">
     <div class="container">
         <div class="immersive-panel">
-            <h6 class="text-info">Theoritical Approach</h6>
+            <h6 class="text-info">Theoretical Approach</h6>
             <h2>Educating the Child on the Divine Nature (Esteem) and Biology of Reasoning</h2>
             <p>The pivotal innovation of the AI–RR is its core course titled: “‘I’ IS Divine Intelligence.”</p>
             <p class="immersive-quote">The first three sessions of this course provide a methodological exposition of the true basis of self-esteem as Righteousness, and clearly distinguish between Human Esteem (rooted in social righteousness) and Divine Esteem (rooted in God’s eternal righteousness). The next two sessions gradually unveil the structure and function of the core systems of Reasoning—the Memory and Emotions systems—ensuring that the child’s spirit is attuned inwardly as the practical approaches run concurrently.</p>
@@ -807,7 +828,7 @@
             <article class="bullet-card">
                 <div class="bullet-card__icon" aria-hidden="true"><span class="icon-bubbles"></span></div>
                 <h3>The Course: “I” (Reasoning) IS Divine Intelligence</h3>
-                <a href="calender.html" class="bullet-card__cta">Read more <span class="icon-arrow-right"></span></a>
+                <a href="academics.html" class="bullet-card__cta">Read more <span class="icon-arrow-right"></span></a>
             </article>
             <article class="bullet-card">
                 <div class="bullet-card__icon" aria-hidden="true"><span class="icon-action-redo"></span></div>
